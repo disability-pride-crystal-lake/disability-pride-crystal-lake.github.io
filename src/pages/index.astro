@@ -109,6 +109,16 @@ import flyerImage from '@assets/img/event-flyer.jpg'
       <div class="mb-2">
         <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="783b07b2-4065-4956-be1d-2206506560dd"></script>
       </div>
+      <script>
+        const observer = new MutationObserver(() => {
+          const iframe = document.querySelector('[data-beehiiv-form] iframe, iframe[src*="beehiiv"]')
+          if (iframe && !iframe.title) {
+            iframe.title = 'Email signup form for event updates'
+            observer.disconnect()
+          }
+        })
+        observer.observe(document.body, { childList: true, subtree: true })
+      </script>
       <p class="text-sm">We'll send you the event flyer, directions, and any updates. Unsubscribe at any time.</p>
 
       <div class="mt-10 border-t-2 border-current pt-8">
@@ -120,7 +130,6 @@ import flyerImage from '@assets/img/event-flyer.jpg'
             download="Crystal-Lake-Disability-Pride-2026.ics"
             class="button"
             style="display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap;"
-            aria-label="Download calendar file for Apple Calendar, Outlook, or other calendar apps"
           >
             <Icon aria-hidden="true" name="lucide:calendar-plus" size="1.5rem" />
             Apple / Outlook (.ics)
@@ -131,7 +140,7 @@ import flyerImage from '@assets/img/event-flyer.jpg'
             rel="noopener noreferrer"
             class="button"
             style="display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap;"
-            aria-label="Add event to Google Calendar (opens in a new tab)"
+            aria-label="Google Calendar (opens in a new tab)"
           >
             <Icon aria-hidden="true" name="lucide:calendar-check" size="1.5rem" />
             Google Calendar
@@ -146,29 +155,35 @@ import flyerImage from '@assets/img/event-flyer.jpg'
     <div class="container">
       <Heading level="h2" class="mb-8" id="quick-links-heading">Get Involved</Heading>
       <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-        <div class="space-content rounded-lg border-2 border-current p-8">
+        <div class="space-content flex flex-col rounded-lg border-2 border-current p-8">
           <Heading level="h3">Become a Vendor</Heading>
           <p>Showcase your products and services to the disability community at our vendor fair.</p>
-          <Link href="/vendor" isButton type="primary" animateOnHover animationType="boop">
-            <Icon aria-hidden="true" name="lucide:store" size="1.5rem" />
-            Vendor Information
-          </Link>
+          <div class="mt-auto pt-4">
+            <Link href="/vendor" isButton type="primary" animateOnHover animationType="boop">
+              <Icon aria-hidden="true" name="lucide:store" size="1.5rem" />
+              Vendor Information
+            </Link>
+          </div>
         </div>
-        <div class="space-content rounded-lg border-2 border-current p-8">
+        <div class="space-content flex flex-col rounded-lg border-2 border-current p-8">
           <Heading level="h3">Sponsor the Event</Heading>
           <p>Support your community and increase your visibility by becoming a sponsor.</p>
-          <Link href="/sponsorship" isButton type="primary" animateOnHover animationType="boop">
-            <Icon aria-hidden="true" name="lucide:handshake" size="1.5rem" />
-            Sponsorship Details
-          </Link>
+          <div class="mt-auto pt-4">
+            <Link href="/sponsorship" isButton type="primary" animateOnHover animationType="boop">
+              <Icon aria-hidden="true" name="lucide:handshake" size="1.5rem" />
+              Sponsorship Details
+            </Link>
+          </div>
         </div>
-        <div class="space-content rounded-lg border-2 border-current p-8">
+        <div class="space-content flex flex-col rounded-lg border-2 border-current p-8">
           <Heading level="h3">Plan Your Visit</Heading>
           <p>Detailed directions, parking info, and accessibility accommodations for the event.</p>
-          <Link href="/accessibility" isButton type="primary" animateOnHover animationType="boop">
-            <Icon aria-hidden="true" name="lucide:compass" size="1.5rem" />
-            Accessibility Guide
-          </Link>
+          <div class="mt-auto pt-4">
+            <Link href="/accessibility" isButton type="primary" animateOnHover animationType="boop">
+              <Icon aria-hidden="true" name="lucide:compass" size="1.5rem" />
+              Accessibility Guide
+            </Link>
+          </div>
         </div>
       </div>
     </div>

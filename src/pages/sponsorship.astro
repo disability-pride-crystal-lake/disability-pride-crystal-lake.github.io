@@ -60,48 +60,31 @@ import zelleQr from '@assets/img/qr-code.jpg'
           tax-exempt organization. Choose the package that best fits your goals:
         </p>
 
-        <div class="my-8 overflow-x-auto">
-          <table class="w-full border-collapse" aria-label="Sponsorship tier comparison showing three packages with pricing and included benefits">
-            <thead>
-              <tr>
-                <th scope="col" class="border-2 border-current p-4 text-left">Package</th>
-                <th scope="col" class="border-2 border-current p-4 text-left">Price</th>
-                <th scope="col" class="border-2 border-current p-4 text-left">What&rsquo;s Included</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="border-2 border-current p-4 font-semibold align-top">Resources Package</th>
-                <td class="border-2 border-current p-4 align-top"><strong>$199</strong></td>
-                <td class="border-2 border-current p-4">
-                  <ul class="ml-4 list-disc">
-                    <li>Your brochure and/or business card displayed at the event venue</li>
-                    <li>Social media shout-out with your business tagged on Z Advocacy's channels</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="border-2 border-current p-4 font-semibold align-top">Signage Package</th>
-                <td class="border-2 border-current p-4 align-top"><strong>$299</strong></td>
-                <td class="border-2 border-current p-4">
-                  <ul class="ml-4 list-disc">
-                    <li>All benefits of the Resources Package</li>
-                    <li>A physical banner featuring your business logo and contact information displayed at the event</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="border-2 border-current p-4 font-semibold align-top">T-shirt Package</th>
-                <td class="border-2 border-current p-4 align-top"><strong>$399</strong></td>
-                <td class="border-2 border-current p-4">
-                  <ul class="ml-4 list-disc">
-                    <li>All benefits of the Resources and Signage Packages</li>
-                    <li>Your business logo featured on the official Event T-Shirts distributed to hundreds of community members</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="my-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div class="rounded-lg border-2 border-current p-6">
+            <Heading level="h3" class="mb-2">Resources Package</Heading>
+            <p class="mb-4 text-2xl font-bold">$199</p>
+            <ul class="ml-4 list-disc">
+              <li>Your brochure and/or business card displayed at the event venue</li>
+              <li>Social media shout-out with your business tagged on Z Advocacy's channels</li>
+            </ul>
+          </div>
+          <div class="rounded-lg border-2 border-current p-6">
+            <Heading level="h3" class="mb-2">Signage Package</Heading>
+            <p class="mb-4 text-2xl font-bold">$299</p>
+            <ul class="ml-4 list-disc">
+              <li>All benefits of the Resources Package</li>
+              <li>A physical banner featuring your business logo and contact information displayed at the event</li>
+            </ul>
+          </div>
+          <div class="rounded-lg border-2 border-current p-6">
+            <Heading level="h3" class="mb-2">T-shirt Package</Heading>
+            <p class="mb-4 text-2xl font-bold">$399</p>
+            <ul class="ml-4 list-disc">
+              <li>All benefits of the Resources and Signage Packages</li>
+              <li>Your business logo featured on the official Event T-Shirts distributed to hundreds of community members</li>
+            </ul>
+          </div>
         </div>
       </section>
 

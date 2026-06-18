@@ -1,4 +1,4 @@
-import { defineConfig, envField } from 'astro/config'
+import { defineConfig } from 'astro/config'
 import { fileURLToPath } from 'url'
 import compress from 'astro-compress'
 import icon from 'astro-icon'
@@ -27,8 +27,7 @@ const viteConfig = {
       '@content': fileURLToPath(new URL('./src/content', import.meta.url)),
       '@pages': fileURLToPath(new URL('./src/pages', import.meta.url)),
       '@public': fileURLToPath(new URL('./public', import.meta.url)),
-      '@post-images': fileURLToPath(new URL('./public/posts', import.meta.url)),
-      '@project-images': fileURLToPath(new URL('./public/projects', import.meta.url)),
+
       '@utils': fileURLToPath(new URL('./src/utils', import.meta.url)),
       '@theme-config': fileURLToPath(new URL('./theme.config.ts', import.meta.url)),
     },
@@ -41,14 +40,4 @@ export default defineConfig({
   site: 'https://disability-pride-crystal-lake.github.io',
   integrations: [compress(), icon(), mdx(), sitemap()],
   vite: viteConfig,
-  env: {
-    schema: {
-      BLOG_API_URL: envField.string({
-        context: 'server',
-        access: 'secret',
-        optional: true,
-        default: 'https://jsonplaceholder.typicode.com/posts',
-      }),
-    },
-  },
 })
