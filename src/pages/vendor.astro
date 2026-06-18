@@ -1,0 +1,108 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import PageHeader from '@components/PageHeader.astro'
+import { Heading, Link } from 'accessible-astro-components'
+import { Icon } from 'astro-icon/components'
+---
+
+<DefaultLayout
+  title="Vendor Registration"
+  description="Information for vendors interested in participating in the 2nd Annual Crystal Lake Disability Pride Event on July 25, 2026."
+>
+  <PageHeader
+    title="Vendor Registration"
+    subtitle="Join us as a vendor at the 2nd Annual Crystal Lake Disability Pride Event"
+    bgType="primary"
+  />
+  <div class="container">
+    <div class="space-content my-12">
+
+      <section aria-labelledby="vendor-overview">
+        <Heading level="h2" id="vendor-overview">Vendor Opportunities</Heading>
+
+        <div class="rounded-lg border-4 border-current p-6 my-4" role="note" aria-labelledby="vendor-policy-heading">
+          <Heading level="h3" id="vendor-policy-heading">Important Eligibility Policy</Heading>
+          <p>
+            <strong>On-site booths for Resources and Vendors are strictly reserved for non-profit organizations and
+            local businesses owned by a member of the Disability Community.</strong>
+          </p>
+          <p>
+            If your business does not meet these criteria but you would still like to support the event, please visit our
+            <Link href="/sponsorship">Sponsorship Page</Link> for alternative marketing opportunities and ways to back the
+            Crystal Lake Disability Pride Event.
+          </p>
+        </div>
+
+        <p>
+          We welcome vendors who align with our mission of celebrating disability pride and supporting the disability community.
+          The vendor fair takes place in the <strong>Commons area inside Building B</strong> at McHenry County College on
+          <strong>July 25, 2026, from 10:00 AM to 1:00 PM</strong>.
+        </p>
+        <p>
+          Whether you offer products, services, advocacy resources, or community information, we invite you to connect directly
+          with attendees in a welcoming, fully accessible environment.
+        </p>
+      </section>
+
+      <section aria-labelledby="vendor-contact">
+        <Heading level="h2" id="vendor-contact">Interested in Becoming a Vendor?</Heading>
+        <p>
+          We'd love to hear from you. Please reach out to our vendor coordination team with any questions about registration,
+          booth setup, or accessibility requirements.
+        </p>
+        <p class="my-8">
+          <a
+            href="mailto:sara.zadvocacy+vendors@gmail.com?subject=Disability%20Pride%20Vendor%20Inquiry%20-%202026"
+            class="button"
+            style="display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap;"
+            aria-label="Email Our Team About Becoming a Vendor"
+          >
+            <Icon aria-hidden="true" name="lucide:mail" size="1.5rem" />
+            Email Our Team About Becoming a Vendor
+          </a>
+        </p>
+      </section>
+
+      <section aria-labelledby="vendor-guidelines">
+        <Heading level="h2" id="vendor-guidelines">Vendor Guidelines</Heading>
+
+        <Heading level="h3">Setup &amp; Timing</Heading>
+        <ul>
+          <li><strong>Vendor check-in and setup:</strong> 8:00 AM &ndash; 9:30 AM</li>
+          <li><strong>Event hours:</strong> 10:00 AM &ndash; 1:00 PM</li>
+          <li><strong>Teardown:</strong> Must be completed by 2:00 PM</li>
+          <li>All vendors must be fully set up and ready by 9:45 AM.</li>
+        </ul>
+
+        <Heading level="h3">Table &amp; Space Details</Heading>
+        <ul>
+          <li>Each vendor will be assigned <strong>one 6-foot table</strong> and two chairs.</li>
+          <li>Table dimensions: approximately 6 feet long &times; 2.5 feet wide &times; 30 inches tall.</li>
+          <li>Additional table requests may be accommodated based on availability &mdash; please inquire in advance.</li>
+          <li>Vendors are responsible for their own tablecloths, signage, and display materials.</li>
+        </ul>
+
+        <Heading level="h3">Power &amp; Electrical</Heading>
+        <ul>
+          <li><strong>Limited electrical outlets are available.</strong> Not every vendor space will have direct access to a power outlet.</li>
+          <li>If your setup requires electricity (e.g., for a display screen, charging station, or powered equipment), you <strong>must request this in advance</strong> so we can assign you an appropriate location.</li>
+          <li>Extension cords and power strips must be safely routed to prevent tripping hazards in accessible pathways.</li>
+        </ul>
+
+        <Heading level="h3">Accessible Booth Requirements</Heading>
+        <p>
+          All vendor booths must meet the following accessibility standards to ensure every attendee can fully participate:
+        </p>
+        <ul>
+          <li><strong>Clear pathways:</strong> Maintain at least 36 inches of clear space on all sides of your table for wheelchair and mobility device access.</li>
+          <li><strong>Reachable displays:</strong> Place key materials, brochures, and products within reach from a seated position (no higher than 48 inches).</li>
+          <li><strong>Text alternatives:</strong> Provide text descriptions or verbal explanations for any visual-only materials (posters, banners, product images).</li>
+          <li><strong>Large print options:</strong> Have at least one copy of key handouts available in large print (minimum 18-point font).</li>
+          <li><strong>No strong fragrances:</strong> Avoid scented products, candles, or perfumes at your booth to support attendees with chemical sensitivities.</li>
+          <li><strong>Tripping hazards:</strong> Secure all cords, mats, and signage bases flat to the floor.</li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+</DefaultLayout>

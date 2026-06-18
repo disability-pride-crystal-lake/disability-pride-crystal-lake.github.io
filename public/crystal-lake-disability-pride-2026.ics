@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Z Advocacy NFP//Crystal Lake Disability Pride Event//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260725T100000
+DTEND;TZID=America/Chicago:20260725T130000
+SUMMARY:2nd Annual Crystal Lake Disability Pride Event
+DESCRIPTION:Celebrating the beauty\, diversity\, and lived experiences of people with disabilities. Live musicians & singers\, community vendors\, essential community resources\, and more. Fully accessible venue with ASL interpreters\, sensory-friendly quiet zones\, and ADA-accessible parking.\n\nOrganized by Z Advocacy NFP.\nhttps://crystallakedisabilitypride.org
+LOCATION:McHenry County College Building B\, 8900 US-14\, Crystal Lake\, IL 60012
+URL:https://crystallakedisabilitypride.org
+ORGANIZER;CN=Z Advocacy NFP:mailto:sara.zadvocacy+info@gmail.com
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Crystal Lake Disability Pride Event is tomorrow!
+END:VALARM
+END:VEVENT
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+END:VCALENDAR

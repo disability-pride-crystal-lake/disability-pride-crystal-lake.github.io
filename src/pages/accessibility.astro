@@ -1,0 +1,174 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import PageHeader from '@components/PageHeader.astro'
+import { Heading } from 'accessible-astro-components'
+import { Icon } from 'astro-icon/components'
+---
+
+<DefaultLayout
+  title="Accessibility & Getting To the Event"
+  description="Detailed directions, parking, step-by-step wayfinding, and accessibility accommodations for the Crystal Lake Disability Pride Event at McHenry County College."
+>
+  <PageHeader
+    title="Accessibility & Getting To the Event"
+    subtitle="Everything you need to plan your visit to the 2nd Annual Crystal Lake Disability Pride Event on July 25, 2026"
+    bgType="gradient"
+  />
+  <div class="container">
+    <div class="space-content my-12">
+
+      <!-- Campus & Building Navigation -->
+      <section aria-labelledby="campus-nav">
+        <Heading level="h2" id="campus-nav">Campus &amp; Building Navigation</Heading>
+        <p>
+          The event takes place at <strong>McHenry County College (MCC)</strong>, located at
+          <strong>8900 US Route 14 (Northwest Highway), Crystal Lake, IL 60012</strong>. All event activities are inside
+          <strong>Building B</strong>, which houses the Luecht Auditorium, Cafeteria, and Commons.
+        </p>
+
+        <Heading level="h3">Arriving by Car from Route 14</Heading>
+        <ul>
+          <li>From <strong>Route 14 (Northwest Highway)</strong>, look for the main McHenry County College entrance. The campus entrance road is clearly marked with MCC signage.</li>
+          <li>Turn into the campus from Route 14. You will be on the main campus drive.</li>
+          <li>Follow signs toward <strong>Building B</strong> and <strong>Visitor/Event Parking</strong>.</li>
+          <li>Building B is one of the larger buildings on campus, located near the center of the main parking areas.</li>
+        </ul>
+
+        <Heading level="h3">Arriving by Public Transportation</Heading>
+        <ul>
+          <li><strong>Pace Bus:</strong> Pace suburban bus routes serve the McHenry County College campus. Check the <a href="https://www.pacebus.com" target="_blank" rel="noopener noreferrer">Pace Bus website<span class="sr-only"> (opens in a new tab)</span></a> for current routes and schedules.</li>
+          <li>The bus stop is located near the main campus entrance, with a paved path leading to Building B.</li>
+        </ul>
+
+        <Heading level="h3">Drop-Off Area</Heading>
+        <ul>
+          <li>A designated <strong>passenger drop-off and pick-up zone</strong> is available near the main entrance to Building B.</li>
+          <li>This area is on a flat, paved surface with a curb cut leading directly to the building entrance.</li>
+        </ul>
+      </section>
+
+      <!-- Parking Instructions -->
+      <section aria-labelledby="parking-info">
+        <Heading level="h2" id="parking-info">Parking Instructions</Heading>
+        <p>
+          McHenry County College offers <strong>free parking</strong> for all event attendees. No parking pass or permit is required.
+        </p>
+
+        <Heading level="h3">ADA-Accessible Parking</Heading>
+        <ul>
+          <li><strong>Designated ADA-accessible parking stalls</strong> are located in the lot directly adjacent to Building B.</li>
+          <li>These spaces are the closest stalls to the Building B entrances, clearly marked with International Symbol of Accessibility signage and blue-painted pavement markings.</li>
+          <li>Access aisles between accessible stalls are wide enough for wheelchair ramp deployment from vans.</li>
+          <li>The path from ADA parking to the Building B entrance is <strong>flat, paved, and free of steps</strong>.</li>
+        </ul>
+
+        <Heading level="h3">General Parking</Heading>
+        <ul>
+          <li>Ample general parking is available in the lots surrounding Building B.</li>
+          <li>All parking lot surfaces are paved. Curb cuts are available at crosswalks between the lots and building entrances.</li>
+        </ul>
+      </section>
+
+      <!-- Word Guide / Text Directions -->
+      <section aria-labelledby="word-guide">
+        <Heading level="h2" id="word-guide">Step-by-Step Text Directions (Word Guide)</Heading>
+        <p>
+          The following text directions describe the path from the parking lot to each event space inside Building B.
+          These directions are provided as an alternative to visual maps for attendees who are blind, have low vision,
+          or prefer written wayfinding.
+        </p>
+
+        <Heading level="h3">From ADA Parking to Building B Entrance</Heading>
+        <ol>
+          <li>Exit your vehicle. The ADA parking stalls are in the lot directly in front of (south of) Building B.</li>
+          <li>Face the building. You will see the main entrance doors ahead of you, approximately 50 to 100 feet from the parking stalls.</li>
+          <li>Walk straight ahead (north) on the flat, paved sidewalk toward the building. There are no steps or elevation changes.</li>
+          <li>You will reach a set of <strong>double glass doors</strong> with automatic door openers (push-button activated) on both sides.</li>
+          <li>Press the automatic door button or pull the door handle to enter Building B.</li>
+        </ol>
+
+        <Heading level="h3">From Building B Entrance to Luecht Auditorium</Heading>
+        <ol>
+          <li>After entering through the main doors, you are in the Building B lobby.</li>
+          <li>Event volunteers and directional signage will be posted at the entrance to guide you.</li>
+          <li>From the lobby, proceed <strong>straight ahead</strong> and follow signs for <strong>Luecht Auditorium</strong>.</li>
+          <li>The auditorium entrance is on the <strong>ground floor</strong> — no stairs or elevator required.</li>
+          <li>Accessible seating is available inside the auditorium, with designated wheelchair spaces and companion seats.</li>
+        </ol>
+
+        <Heading level="h3">From Building B Entrance to Cafeteria</Heading>
+        <ol>
+          <li>From the Building B lobby, follow signs for the <strong>Cafeteria</strong>.</li>
+          <li>The Cafeteria is located on the <strong>ground floor</strong> of Building B.</li>
+          <li>The path to the Cafeteria is along a wide, flat hallway with no steps.</li>
+          <li>The Cafeteria has wide doorways that accommodate wheelchairs and mobility devices.</li>
+        </ol>
+
+        <Heading level="h3">From Building B Entrance to the Commons</Heading>
+        <ol>
+          <li>From the Building B lobby, follow signs for the <strong>Commons</strong>.</li>
+          <li>The Commons is located on the <strong>ground floor</strong>, near the Cafeteria.</li>
+          <li>The path is flat and step-free throughout.</li>
+          <li>This is where the vendor booths and community resource tables are set up.</li>
+          <li>Aisles between vendor tables are maintained at a minimum of 36 inches wide for wheelchair and mobility device access.</li>
+        </ol>
+      </section>
+
+      <!-- Sensory & Accommodations -->
+      <section aria-labelledby="accommodations">
+        <Heading level="h2" id="accommodations">Sensory &amp; Accessibility Accommodations</Heading>
+
+        <Heading level="h3">Quiet / Sensory Decompression Zones</Heading>
+        <ul>
+          <li>Designated <strong>quiet rooms</strong> will be available inside Building B for attendees who need a break from noise, crowds, or sensory stimulation.</li>
+          <li>These spaces will be clearly marked with signage and listed on printed event guides.</li>
+          <li>Quiet zones will have <strong>dimmed lighting</strong>, <strong>minimal noise</strong>, and comfortable seating.</li>
+          <li>Noise-reducing ear protection will be available to borrow at the event registration table.</li>
+        </ul>
+
+        <Heading level="h3">ASL Interpreters</Heading>
+        <ul>
+          <li><strong>American Sign Language (ASL) interpreters</strong> will be present at the Luecht Auditorium for all main stage presentations and speakers.</li>
+          <li>Interpreters will be positioned in a well-lit area to the side of the stage, visible from designated Deaf and hard-of-hearing seating sections.</li>
+          <li>If you need ASL interpretation at a specific vendor booth or elsewhere at the event, please ask an event volunteer and we will coordinate support.</li>
+        </ul>
+
+        <Heading level="h3">Service Animals</Heading>
+        <ul>
+          <li><strong>Service animals are welcome</strong> in all event spaces, including the auditorium, cafeteria, commons, and quiet zones.</li>
+          <li>Water bowls for service animals will be available near the event registration area and the quiet zones.</li>
+          <li>Please keep service animals under your control at all times. Event staff are trained in service animal etiquette and will not interfere with working animals.</li>
+        </ul>
+
+        <Heading level="h3">Additional Accommodations</Heading>
+        <ul>
+          <li><strong>Accessible restrooms</strong> are located on the ground floor of Building B, near both the Cafeteria and the Commons.</li>
+          <li><strong>Large-print event programs</strong> will be available at the registration table.</li>
+          <li>Event volunteers will be stationed throughout Building B to provide wayfinding assistance.</li>
+          <li>If you have a specific accommodation need not listed here, please contact us in advance and we will do our best to help.</li>
+        </ul>
+      </section>
+
+      <!-- Contact for Accommodations -->
+      <section aria-labelledby="accommodations-contact">
+        <Heading level="h2" id="accommodations-contact">Request an Accommodation</Heading>
+        <p>
+          If you have an accessibility need or accommodation request that is not covered on this page, please don't hesitate to
+          reach out. We are committed to making this event welcoming and accessible for everyone.
+        </p>
+        <p class="my-8">
+          <a
+            href="mailto:sara.zadvocacy+info@gmail.com?subject=Crystal%20Lake%20Disability%20Pride%20-%20Accommodation%20Request"
+            class="button"
+            style="display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap;"
+            aria-label="Contact Z Advocacy to request an accessibility accommodation"
+          >
+            <Icon aria-hidden="true" name="lucide:mail" size="1.5rem" />
+            Contact Us About Accessibility Accommodations
+          </a>
+        </p>
+      </section>
+
+    </div>
+  </div>
+</DefaultLayout>

@@ -1,0 +1,182 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import PageHeader from '@components/PageHeader.astro'
+import { Heading } from 'accessible-astro-components'
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import zelleQr from '@assets/img/qr-code.jpg'
+---
+
+<DefaultLayout
+  title="Sponsorship Opportunities"
+  description="Support the 2nd Annual Crystal Lake Disability Pride Event. Learn how your business or organization can sponsor this community celebration on July 25, 2026."
+>
+  <PageHeader
+    title="Sponsorship Opportunities"
+    subtitle="Help make disability pride a lasting community tradition in Crystal Lake and McHenry County"
+    bgType="secondary"
+  />
+  <div class="container">
+    <div class="space-content my-12">
+
+      <!-- Sara's Intro Letter -->
+      <section aria-labelledby="intro-letter">
+        <Heading level="h2" id="intro-letter">A Letter from Our Board Lead</Heading>
+        <blockquote class="rounded-lg border-2 border-current p-8 my-4">
+          <p>May 1, 2026</p>
+          <p>Dear Community Partners,</p>
+          <p>
+            On behalf of <strong>Z Advocacy NFP</strong>, I am writing to invite your business or organization to
+            become a sponsor of the <strong>2nd Annual Crystal Lake Disability Pride Event</strong>, taking place on
+            <strong>July 25, 2026</strong> at McHenry County College.
+          </p>
+          <p>
+            This event is a celebration of the beauty, diversity, and lived experiences of people with disabilities.
+            It brings together hundreds of community members, families, advocates, and allies for a day of live
+            entertainment, community vendors, and essential resources — all in a fully accessible environment.
+          </p>
+          <p>
+            Your tax-deductible contribution directly supports the long-term success of the disability pride movement
+            in Crystal Lake and McHenry County. Sponsorship funds help us provide ASL interpreters, sensory-friendly
+            quiet zones, accessible transportation support, event materials, and outreach to underserved disability
+            communities.
+          </p>
+          <p>
+            Together, we can build a lasting tradition that uplifts and celebrates the disability community for years
+            to come. I invite you to review the sponsorship packages below and reach out to us with any questions.
+          </p>
+          <p>With gratitude,</p>
+          <footer>
+            <p><strong>Sara Zielinski</strong><br />Board Lead, Z Advocacy NFP</p>
+          </footer>
+        </blockquote>
+      </section>
+
+      <!-- Sponsorship Tiers -->
+      <section aria-labelledby="sponsor-tiers">
+        <Heading level="h2" id="sponsor-tiers">Marketing Opportunity Packages</Heading>
+        <p>
+          All sponsorship contributions are <strong>tax-deductible</strong>. Z Advocacy NFP is a registered 501(c)(3)
+          tax-exempt organization. Choose the package that best fits your goals:
+        </p>
+
+        <div class="my-8 overflow-x-auto">
+          <table class="w-full border-collapse" aria-label="Sponsorship tier comparison showing three packages with pricing and included benefits">
+            <thead>
+              <tr>
+                <th scope="col" class="border-2 border-current p-4 text-left">Package</th>
+                <th scope="col" class="border-2 border-current p-4 text-left">Price</th>
+                <th scope="col" class="border-2 border-current p-4 text-left">What&rsquo;s Included</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="border-2 border-current p-4 font-semibold align-top">Resources Package</th>
+                <td class="border-2 border-current p-4 align-top"><strong>$199</strong></td>
+                <td class="border-2 border-current p-4">
+                  <ul class="ml-4 list-disc">
+                    <li>Your brochure and/or business card displayed at the event venue</li>
+                    <li>Social media shout-out with your business tagged on Z Advocacy's channels</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="border-2 border-current p-4 font-semibold align-top">Signage Package</th>
+                <td class="border-2 border-current p-4 align-top"><strong>$299</strong></td>
+                <td class="border-2 border-current p-4">
+                  <ul class="ml-4 list-disc">
+                    <li>All benefits of the Resources Package</li>
+                    <li>A physical banner featuring your business logo and contact information displayed at the event</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="border-2 border-current p-4 font-semibold align-top">T-shirt Package</th>
+                <td class="border-2 border-current p-4 align-top"><strong>$399</strong></td>
+                <td class="border-2 border-current p-4">
+                  <ul class="ml-4 list-disc">
+                    <li>All benefits of the Resources and Signage Packages</li>
+                    <li>Your business logo featured on the official Event T-Shirts distributed to hundreds of community members</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Donation Information Card -->
+      <section aria-labelledby="donation-info" class="rounded-lg border-4 border-current p-8 my-8">
+        <Heading level="h2" id="donation-info">How to Submit Your Sponsorship</Heading>
+        <p>
+          All sponsorship contributions are <strong>tax-deductible</strong>. You can submit your donation using any of the
+          following methods:
+        </p>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 my-4 items-start">
+          <div class="space-content">
+            <Heading level="h3">Pay via Zelle</Heading>
+            <p>
+              Scan the QR code or use our official registration phone number to send your tax-deductible sponsorship
+              donation via Zelle:
+            </p>
+            <p class="text-xl font-semibold">
+              Phone: <a href="tel:+18472174686" aria-label="Call Z Advocacy at (847) 217-4686">(847) 217-4686</a>
+            </p>
+            <Heading level="h3">Pay by Check</Heading>
+            <p>
+              Checks are also accepted. Please reach out to us directly to arrange check payment and obtain mailing
+              instructions.
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <Image
+              src={zelleQr}
+              alt="QR code for submitting a tax-deductible Zelle sponsorship donation to Z Advocacy NFP for the Crystal Lake Disability Pride Event. Scan this code with your banking app to send payment."
+              width={300}
+              height={400}
+              class="rounded-lg shadow-lg object-contain"
+              loading="lazy"
+            />
+            <p class="text-center text-sm"><em>Scan with your banking app to donate via Zelle</em></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Sponsor -->
+      <section aria-labelledby="why-sponsor">
+        <Heading level="h2" id="why-sponsor">Why Sponsor This Event?</Heading>
+        <p>
+          This is more than a marketing opportunity — it's an investment in your community. Sponsorship funds go directly toward:
+        </p>
+        <ul>
+          <li>Providing <strong>ASL interpreters</strong> and communication access throughout the event.</li>
+          <li>Creating <strong>sensory-friendly quiet zones</strong> for attendees who need them.</li>
+          <li>Ensuring <strong>accessible transportation</strong> and wayfinding support on campus.</li>
+          <li>Covering venue costs, materials, and outreach to underserved disability communities.</li>
+          <li>Building a <strong>sustainable annual tradition</strong> that grows each year.</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section aria-labelledby="sponsor-contact">
+        <Heading level="h2" id="sponsor-contact">Get in Touch</Heading>
+        <p>
+          Ready to support the Crystal Lake Disability Pride Event? We'd love to discuss sponsorship options with you.
+          Please reach out to our sponsorship coordination team.
+        </p>
+        <p class="my-8">
+          <a
+            href="mailto:sara.zadvocacy+sponsors@gmail.com?subject=Disability%20Pride%20Sponsorship%20Inquiry%20-%202026"
+            class="button"
+            style="display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap;"
+            aria-label="Contact Us Regarding Corporate and Community Sponsorships"
+          >
+            <Icon aria-hidden="true" name="lucide:mail" size="1.5rem" />
+            Contact Us Regarding Corporate and Community Sponsorships
+          </a>
+        </p>
+      </section>
+
+    </div>
+  </div>
+</DefaultLayout>

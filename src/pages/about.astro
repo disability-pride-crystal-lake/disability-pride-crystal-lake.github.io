@@ -1,0 +1,113 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro'
+import PageHeader from '@components/PageHeader.astro'
+import { Heading, Avatar, AvatarGroup } from 'accessible-astro-components'
+import { Icon } from 'astro-icon/components'
+---
+
+<DefaultLayout
+  title="About Us"
+  description="Learn about Z Advocacy, the 501(c)(3) non-profit organizing the Crystal Lake Disability Pride Event, our mission, and the team behind the event."
+>
+  <PageHeader
+    title="About Us"
+    subtitle="Meet the people and organization behind the Crystal Lake Disability Pride Event"
+    bgType="primary"
+  />
+  <div class="container">
+    <div class="space-content my-12">
+
+      <!-- Z Advocacy Section -->
+      <section aria-labelledby="z-advocacy">
+        <Heading level="h2" id="z-advocacy">About Z Advocacy NFP</Heading>
+        <p>
+          <strong>Z Advocacy NFP</strong> is a registered 501(c)(3) tax-exempt organization dedicated to expanding access,
+          resources, and celebrating the lived experiences of individuals within the disability community.
+        </p>
+
+        <Heading level="h3">Our Mission</Heading>
+        <p>
+          Z Advocacy NFP's mission is to champion disability rights through education, community building, and direct advocacy.
+          We work to break down barriers — physical, social, and systemic — that prevent people with disabilities from
+          living full, self-determined lives.
+        </p>
+
+        <Heading level="h3">Our Values</Heading>
+        <ul>
+          <li><strong>Nothing About Us Without Us:</strong> People with disabilities lead our organization and guide every decision.</li>
+          <li><strong>Intersectional Inclusion:</strong> We honor the full spectrum of disability experience, including the ways disability intersects with race, gender, sexuality, age, and socioeconomic status.</li>
+          <li><strong>Community First:</strong> We invest in local relationships and build programs that directly serve the communities where we live and work.</li>
+          <li><strong>Transparency &amp; Accountability:</strong> We operate openly and are accountable to the disability community we serve.</li>
+          <li><strong>Celebration &amp; Pride:</strong> We believe disability is something to be celebrated, not hidden. Disability Pride is at the heart of everything we do.</li>
+        </ul>
+
+        <Heading level="h3">Our Work</Heading>
+        <p>
+          Z Advocacy NFP's work spans several areas:
+        </p>
+        <ul>
+          <li><strong>Community Events:</strong> Organizing Disability Pride celebrations and awareness events across the region.</li>
+          <li><strong>Education &amp; Training:</strong> Providing accessibility training and disability awareness education to businesses, schools, and civic organizations.</li>
+          <li><strong>Individual Advocacy:</strong> Supporting individuals with disabilities in navigating systems, accessing services, and asserting their rights.</li>
+          <li><strong>Policy &amp; Systemic Change:</strong> Working with local and state officials to advance inclusive policies and practices.</li>
+        </ul>
+      </section>
+
+      <!-- The Crystal Lake Disability Pride Event -->
+      <section aria-labelledby="event-background">
+        <Heading level="h2" id="event-background">The Crystal Lake Disability Pride Event</Heading>
+        <p>
+          The Crystal Lake Disability Pride Event was launched in 2025 as a direct response to the need for visible, joyful
+          disability representation in McHenry County. What started as a grassroots gathering has grown into a signature
+          annual event that brings together hundreds of attendees, vendors, sponsors, and community partners.
+        </p>
+        <p>
+          This <strong>2nd Annual</strong> event continues to build on the legacy of the first year, expanding programming,
+          vendor participation, and community reach — all while keeping accessibility and disability pride at its center.
+        </p>
+      </section>
+
+      <!-- Leadership / Committee Grid -->
+      <section aria-labelledby="leadership">
+        <Heading level="h2" id="leadership">Leadership &amp; Event Committee</Heading>
+
+        <p>
+          The Crystal Lake Disability Pride Event is planned and organized by a dedicated committee of volunteers,
+          advocates, and community members:
+        </p>
+        <AvatarGroup display="grid" gridItemsSize="300px" gridGap="2rem">
+          <Avatar initials="SZ" title="Sara Zielinski" subtitle="Board Lead &amp; Organizing Lead, Z Advocacy NFP" />
+          <Avatar initials="EC" title="Event Committee" subtitle="Volunteer Coordinators" />
+          <Avatar initials="VS" title="Vendor &amp; Sponsor Team" subtitle="Community Partnerships" />
+          <Avatar initials="AC" title="Accessibility Committee" subtitle="Accommodations &amp; Logistics" />
+          <Avatar initials="OC" title="Outreach Committee" subtitle="Marketing &amp; Community Engagement" />
+          <Avatar initials="PC" title="Programming Committee" subtitle="Speakers &amp; Activities" />
+        </AvatarGroup>
+        <p class="mt-8">
+          Interested in joining our planning committee? We welcome volunteers who are passionate about disability rights
+          and community building. Reach out to us to learn more.
+        </p>
+      </section>
+
+      <!-- General Contact -->
+      <section aria-labelledby="general-contact">
+        <Heading level="h2" id="general-contact">Contact Us</Heading>
+        <p>
+          Have a question, idea, or just want to connect? We'd love to hear from you.
+        </p>
+        <p class="my-8">
+          <a
+            href="mailto:sara.zadvocacy+info@gmail.com?subject=Crystal%20Lake%20Disability%20Pride%20General%20Inquiry"
+            class="button"
+            style="display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap;"
+            aria-label="Contact Z Advocacy Regarding the Crystal Lake Disability Pride Event"
+          >
+            <Icon aria-hidden="true" name="lucide:mail" size="1.5rem" />
+            Contact Z Advocacy Regarding the Crystal Lake Disability Pride Event
+          </a>
+        </p>
+      </section>
+
+    </div>
+  </div>
+</DefaultLayout>
