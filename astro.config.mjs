@@ -39,7 +39,6 @@ const viteConfig = {
 export default defineConfig({
   compressHTML: true,
   site: 'https://disability-pride-crystal-lake.github.io',
-  base: '/disability-pride-website',
   integrations: [compress(), icon(), mdx(), sitemap()],
   vite: viteConfig,
   env: {
